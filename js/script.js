@@ -1,6 +1,6 @@
 // blogs page link redirect code
 document.getElementById("blogs").addEventListener("click", function () {
-    window.location.href = "https://abubakar-wxy.github.io/assignment_5/html/blogs.html";
+    window.location.href = "/html/blogs.html";
 });
 
 // Function to generate a random color
