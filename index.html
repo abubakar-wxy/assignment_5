@@ -27,7 +27,7 @@
                 <div>
                     <div class="text-2xl mr-10 flex items-center px-5 py-2  bg-[#F4F7FF] rounded-3xl">
                         <img class="mr-3 h-6 " src="assets/checkbox.png" alt="">
-                        <h4 class="font-bold">23</h4>
+                        <h4 id="completedCount" class="font-bold">23</h4>
                     </div>
                 </div>
                 <div>
@@ -50,7 +50,7 @@
                             </div>
                             <div>
                                 <p class="font-semibold text-gray-500">Task Assigned</p>
-                                <span class="font-extrabold text-2xl">O5</span>
+                                <span class="font-extrabold text-2xl">0<span id="taskCount">6</span></span>
                             </div>
                         </div>
                         <div id="blogs"
@@ -63,8 +63,10 @@
                                 <img src="assets/calender.png" alt="">
                             </div>
                             <div>
-                                <h3 class="text-lg"><span class="font-semibold text-gray-500">Wed</span>,<br> <span
-                                        class="font-bold">Jul 28 2025</span></h3>
+                                <h3 class="text-lg">
+                                    <span class="font-semibold text-gray-500" id="dayName"></span><br>
+                                    <span class="font-bold" id="fullDate"></span>
+                                </h3>
                             </div>
                         </div>
                     </div>
@@ -76,7 +78,7 @@
 
                             <div class="bg-[#F4F7FF] p-4 rounded-xl">
                                 <h4 class="bg-white px-3 py-1 inline-block rounded-lg mb-3">ShopEase</h4>
-                                <h2 class="text-2xl font-semibold text-gray-700">Fix Mobile Button Issue</h2>
+                                <h2 id="titleIdOne" class="text-2xl font-semibold text-gray-700">Fix Mobile Button Issue</h2>
                                 <p class="bg-white px-3 py-1 rounded-lg my-3">Debug using Chrome DevTools, check for
                                     overlapping elements, and ensure onClick works
                                     properly</p>
@@ -86,13 +88,13 @@
                                         <span class="text-sm">Deadline</span><br>
                                         <span>21 March 2025</span>
                                     </div>
-                                    <button
+                                    <button id="taskOneBtn"
                                         class="btn btn-primary bg-[#3752FD] rounded-lg border-none">Completed</button>
                                 </div>
                             </div>
                             <div class="bg-[#F4F7FF] p-4 rounded-xl">
                                 <h4 class="bg-white px-3 py-1 inline-block rounded-lg mb-3">CloudSync</h4>
-                                <h2 class="text-2xl font-semibold text-gray-700">Add Dark Mode</h2>
+                                <h2 id="titleIdTwo" class="text-2xl font-semibold text-gray-700">Add Dark Mode</h2>
                                 <p class="bg-white px-3 py-1 rounded-lg my-3">Store the user's preference in
                                     localStorage, update CSS variables dynamically, and apply a smooth transition
                                     effect.</p>
@@ -102,13 +104,14 @@
                                         <span class="text-sm">Deadline</span><br>
                                         <span>21 March 2025</span>
                                     </div>
-                                    <button
+                                    <button id="taskTwoBtn"
                                         class="btn btn-primary bg-[#3752FD] rounded-lg border-none">Completed</button>
                                 </div>
                             </div>
                             <div class="bg-[#F4F7FF] p-4 rounded-xl">
                                 <h4 class="bg-white px-3 py-1 inline-block rounded-lg mb-3">SwiftPay</h4>
-                                <h2 class="text-2xl font-semibold text-gray-700">Optimize Home page </h2>
+                                <h2 id="titleIdThree" class="text-2xl font-semibold text-gray-700">Optimize Home page 
+                                </h2>
                                 <p class="bg-white px-3 py-1 rounded-lg my-3">Debug using Chrome DevTools, check for
                                     overlapping elements, and ensure onClick works properly</p>
                                 <hr class="border-spacing-0.5 border-dashed border-gray-300 my-1">
@@ -117,14 +120,14 @@
                                         <span class="text-sm">Deadline</span><br>
                                         <span>21 March 2025</span>
                                     </div>
-                                    <button
+                                    <button id="taskThreeBtn"
                                         class="btn btn-primary bg-[#3752FD] rounded-lg border-none">Completed</button>
                                 </div>
                             </div>
                             <!-- second row cart -->
                             <div class="bg-[#F4F7FF] p-4 rounded-xl">
                                 <h4 class="bg-white px-3 py-1 inline-block rounded-lg mb-3">Meta</h4>
-                                <h2 class="text-2xl font-semibold text-gray-700">Add new emoji 🤲</h2>
+                                <h2 id="titleIdFour" class="text-2xl font-semibold text-gray-700">Add new emoji 🤲</h2>
                                 <p class="bg-white px-3 py-1 rounded-lg my-3">Debug using Chrome DevTools, check for
                                     overlapping elements, and ensure onClick works properly
                                     and ensure onClick works properly</p>
@@ -134,13 +137,14 @@
                                         <span class="text-sm">Deadline</span><br>
                                         <span>21 March 2025</span>
                                     </div>
-                                    <button
+                                    <button id="taskFourBtn"
                                         class="btn btn-primary bg-[#3752FD] rounded-lg border-none">Completed</button>
                                 </div>
                             </div>
                             <div class="bg-[#F4F7FF] p-4 rounded-xl">
                                 <h4 class="bg-white px-3 py-1 inline-block rounded-lg mb-3">Google LLC</h4>
-                                <h2 class="text-2xl font-semibold text-gray-700">Integrate OpenAI API</h2>
+                                <h2 id="titleIdFive" class="text-2xl font-semibold text-gray-700">Integrate OpenAI API
+                                </h2>
                                 <p class="bg-white px-3 py-1 rounded-lg my-3">Debug using Chrome DevTools, check for
                                     overlapping elements, and ensure onClick works properly</p>
                                 <hr class="border-spacing-0.5 border-dashed border-gray-300 my-1">
@@ -149,13 +153,14 @@
                                         <span class="text-sm">Deadline</span><br>
                                         <span>21 March 2025</span>
                                     </div>
-                                    <button
+                                    <button id="taskFiveBtn"
                                         class="btn btn-primary bg-[#3752FD] rounded-lg border-none">Completed</button>
                                 </div>
                             </div>
                             <div class="bg-[#F4F7FF] p-4 rounded-xl">
                                 <h4 class="bg-white px-3 py-1 inline-block rounded-lg mb-3">Glassdoar</h4>
-                                <h2 class="text-2xl font-semibold text-gray-700">Improve Job searching</h2>
+                                <h2 id="titleIdSix" class="text-2xl font-semibold text-gray-700">Improve Job searching
+                                </h2>
                                 <p class="bg-white px-3 py-1 rounded-lg my-3">Debug using Chrome DevTools, check for
                                     overlapping elements, and ensure onClick works properly</p>
                                 <hr class="border-spacing-0.5 border-dashed border-gray-300 my-1">
@@ -164,7 +169,7 @@
                                         <span class="text-sm">Deadline</span><br>
                                         <span>21 March 2025</span>
                                     </div>
-                                    <button
+                                    <button id="taskSixBtn"
                                         class="btn btn-primary bg-[#3752FD] rounded-lg border-none">Completed</button>
                                 </div>
                             </div>
@@ -179,17 +184,10 @@
                         <h3 class="text-xl font-bold flex items-center justify-center">
                             <img class="text-center mr-3 w-5" src="assets/activity.png" alt=""> Activity Log
                         </h3>
-                        <button class="btn btn-primary bg-[#3752FD] my-3 rounded-lg border-none">Clear History</button>
+                        <button id="clearHistory" class="btn btn-primary bg-[#3752FD] my-3 rounded-lg border-none">Clear History</button>
                     </div>
-                    <div class="text-left">
-                        <p class="px-3 py-1 my-4 rounded-xl text-sm bg-[#F4F7FF]">You have Complete The Task Add Dark
-                            Mode at 12:48:15 PM</p>
-                        <p class="px-3 py-1 my-4 rounded-xl text-sm bg-[#F4F7FF]">You have Complete The Task Add Dark
-                            Mode at 12:48:15 PM</p>
-                        <p class="px-3 py-1 my-4 rounded-xl text-sm bg-[#F4F7FF]">You have Complete The Task Add Dark
-                            Mode at 12:48:15 PM</p>
-                        <p class="px-3 py-1 my-4 rounded-xl text-sm bg-[#F4F7FF]">You have Complete The Task Add Dark
-                            Mode at 12:48:15 PM</p>
+                    <div class="text-left" id="completionMessages">
+                        <!-- add message from button click dynamically -->
                     </div>
 
                 </div>
@@ -199,7 +197,6 @@
 
 
 
-    <script src="/js/blog.js"></script>
     <script src="/js/fitures.js"></script>
 </body>
 
