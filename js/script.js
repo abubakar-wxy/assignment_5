@@ -93,14 +93,8 @@ function markTaskComplete(buttonId, titleId) {
 
 // clear message history
 function clearHistory() {
-    // Get the messages container
     const messagesDiv = document.getElementById("completionMessages");
-
-    // Remove all messages inside the div
     messagesDiv.innerHTML = "";
-
-    // Alert message (optional)
-    alert("History cleared successfully!");
 }
 // clear history click listener and call the clean function
 document.getElementById("clearHistory").addEventListener("click", function () {
