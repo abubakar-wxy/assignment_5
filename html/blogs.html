@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en" class="bg-[#F4F7FF]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0/themes.css" rel="stylesheet" type="text/css" />
+
+    <title>Blogs</title>
+</head>
+
+<body class="">
+    <header class="container m-auto py-5">
+        <div class="navbar bg-base-100 shadow-sm rounded-xl">
+            <div class="flex-1">
+                <div class="flex items-center text-3xl">
+                    <img src="/assets/logo.png" class="w-13 p-2" alt="">
+                    <p>Dev<b>Board</b></p>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div>
+                    <button id="blog_back_btn" class="btn btn-primary bg-[#3752FD] my-3 rounded-lg border-none">Back to
+                        Desk</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <div>
+            <h1 class="text-3xl font-bold text-center mb-5 mt-3">Blogs</h1>
+        </div>
+        <div class="grid gap-4 mb-5">
+            <div>
+                <h2 class="bg bg-white p-4 rounded-t-xl font-bold text-gray-700">Question-1: What are the different ways to select an element in
+                    the DOM?</h2>
+                <hr class="border-spacing-0.5 border-dashed border-gray-300">
+                <p class="bg-white p-4 rounded-b-xl">Answer-1: We can select element using 'ID', 'Class Name', 'Tag
+                    Name', 'Query
+                    Selector', 'Query Selector All' etc and other many ways to select DOM element.</p>
+            </div>
+            <div>
+                <h2 class="bg bg-white p-4 rounded-t-xl font-bold text-gray-700">Question-2: What is the difference
+                    between innerHTML,
+                    innerText, and textContent ?</h2>
+                <hr class="border-spacing-0.5 border-dashed border-gray-300">
+                <p class="bg-white p-4 rounded-b-xl">Answer-2: Difference Between innerHTML, innerText, and
+                    textContent is
+                    innerHTML use when you need to insert or retrieve HTML content. Use innerText when you need only
+                    visible text (ignores hidden elements). And use textContent when you need all text, including hidden
+                    text, and better performance.</p>
+            </div>
+            <div>
+                <h2 class="bg bg-white p-4 rounded-t-xl font-bold text-gray-700">Question-3: What is event delegation in
+                    the DOM?</h2>
+                <hr class="border-spacing-0.5 border-dashed border-gray-300">
+                <p class="bg-white p-4 rounded-b-xl">Answer-3: Event delegation is a technique in the DOM where a
+                    parent element
+                    listens for events on its child elements using event bubbling. Instead of attaching event listeners
+                    to multiple child elements, you attach a single listener to the parent and handle events using
+                    event.target.</p>
+            </div>
+            <div>
+                <h2 class="bg bg-white p-4 rounded-t-xl font-bold text-gray-700">Question-4: What is event bubbling in
+                    the DOM?</h2>
+                <hr class="border-spacing-0.5 border-dashed border-gray-300">
+                <p class="bg-white p-4 rounded-b-xl">Answer-4: Event bubbling is a phase in the DOM event propagation
+                    where an
+                    event starts from the target element and moves upward to its parent elements until it reaches the
+                    document object.</p>
+            </div>
+            <div>
+                <h2 class="bg bg-white p-4 rounded-t-xl font-bold text-gray-700">Question-5: How do you create, add, and
+                    remove elements using
+                    JavaScript?</h2>
+                <hr class="border-spacing-0.5 border-dashed border-gray-300">
+                <div class="bg-white p-4 rounded-b-xl">
+                    <p class="font-semibold">Answer-5: We can create, add, and remove elements using JavaScript:</p>
+                    <p>
+                        <p class="font-semibold">Create an Element:</p>
+                        let createElement = document.createElement("div");<br>
+                        createElement.textContent = "Hello, World!";<br>
+                    </p>
+                    <p>
+                        <p class="font-semibold">Add an Element:</p>
+                        document.body.appendChild(createElement);<br>
+                    </p>
+                    <p>
+                        <p class="font-semibold">Remove an Element: </p>
+                        let elementToRemove = document.getElementById("myElement"); <br>
+                        elementToRemove.remove();<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("blog_back_btn").addEventListener("click", function () {
+            window.location.href = "/index.html";
+        });
+    </script>
+</body>
+
+</html>
